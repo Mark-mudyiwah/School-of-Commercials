@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,12 @@
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
+
+    <link rel="stylesheet" href="css/shared/header.css">
+    <link rel="stylesheet" href="css/shared/footer.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -28,36 +30,32 @@
 
     <!-- ================= HEADER ================= -->
 
-    <header class="header">
-        <div class="container navbar">
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-container">
 
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <i class="fa-solid fa-book-open"></i>
-                    <i class="fa-solid fa-graduation-cap cap-icon"></i>
-                </span>
+            <a href="../index.html" class="logo">
+                <img src="images/hero-images/logo.jpg" alt="School of Commercials Logo">
 
-                <span class="logo-text">
-                    <strong>SCHOOLS OF</strong>
-                    <strong>COMMERCIALS</strong>
-                    <small>Learn. Improve. Achieve.</small>
-                </span>
+                <span>School of <strong>Commercials</strong></span>
             </a>
 
-            <nav class="nav-links" id="navLinks">
-                <a href="index.html" class="active">Home</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/subjects.html">Subjects</a>
-                <a href="#why-us">Our Approach</a>
-                <a href="pages/contact.html">Contact</a>
+
+
+            <nav class="navbar" id="navbar">
+                <a href="../index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="subjects.html">Subjects</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="enrolment.html" class="btn btn-primary nav-btn">
+                    Enquire Now
+                </a>
             </nav>
 
-            <a href="pages/enrolment.html" class="btn btn-primary nav-btn">
-                Enrol Now <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navbar">
 
-            <button class="menu-toggle" id="menuToggle"
-                aria-label="Toggle navigation" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -69,248 +67,234 @@
 
         <!-- ================= HERO ================= -->
 
-<section class="hero hero-slider" id="heroSlider">
+        <section class="hero hero-slider" id="heroSlider">
 
-    <div class="hero-slides">
+            <div class="hero-slides">
 
-        <!-- SLIDE 1 -->
-        <article class="hero-slide active">
-            <div class="container hero-grid">
+                <!-- SLIDE 1 -->
+                <article class="hero-slide active">
+                    <div class="container hero-grid">
 
-                <div class="hero-content">
-                    <span class="eyebrow">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        YOUR JOURNEY TO SUCCESS STARTS HERE
-                    </span>
+                        <div class="hero-content">
+                            <span class="eyebrow">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                YOUR JOURNEY TO SUCCESS STARTS HERE
+                            </span>
 
-                    <h1>
-                        Build Strong Foundations for a
-                        <span>Brighter Future.</span>
-                    </h1>
+                            <h1>
+                                Build Strong Foundations for a
+                                <span>Brighter Future.</span>
+                            </h1>
 
-                    <p class="hero-description">
-                        Get focused extra lessons for your O Level and
-                        A Level subjects. Build confidence, understand
-                        more and work towards your academic goals.
-                    </p>
+                            <p class="hero-description">
+                                Get focused extra lessons for your O Level and
+                                A Level subjects. Build confidence, understand
+                                more and work towards your academic goals.
+                            </p>
 
-                    <div class="hero-buttons">
-                        <a href="pages/subjects.html" class="btn btn-primary">
-                            Explore Subjects
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                            <div class="hero-buttons">
+                                <a href="pages/subjects.html" class="btn btn-primary">
+                                    Explore Subjects
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
 
-                        <a href="pages/contact.html" class="btn btn-outline">
-                            Contact Us
-                        </a>
+                                <a href="pages/contact.html" class="btn btn-outline">
+                                    Contact Us
+                                </a>
+                            </div>
+
+                            <div class="hero-features">
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <span>Focused<br>Learning</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <span>Academic<br>Progress</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Student<br>Support</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-image">
+                            <img src="./images/hero-images/students.jpg" alt="Students studying together">
+
+                            <div class="image-badge">
+                                <i class="fa-solid fa-book-open"></i>
+                                <div>
+                                    <strong>Learn Every Day</strong>
+                                    <span>Small steps. Big progress.</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </article>
 
-                    <div class="hero-features">
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>Focused<br>Learning</span>
+
+                <!-- SLIDE 2 -->
+                <article class="hero-slide">
+                    <div class="container hero-grid">
+
+                        <div class="hero-content">
+                            <span class="eyebrow">
+                                <i class="fa-solid fa-bullseye"></i>
+                                PREPARE TODAY. SUCCEED TOMORROW.
+                            </span>
+
+                            <h1>
+                                Turn Your Hard Work Into
+                                <span>Great Results.</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Prepare for your examinations with guided revision,
+                                subject practice and support that helps you tackle
+                                challenging questions with confidence.
+                            </p>
+
+                            <div class="hero-buttons">
+                                <a href="pages/o-level.html" class="btn btn-primary">
+                                    O Level Lessons
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                                <a href="pages/a-level.html" class="btn btn-outline">
+                                    A Level Lessons
+                                </a>
+                            </div>
+
+                            <div class="hero-features">
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-file-circle-check"></i>
+                                    <span>Exam<br>Preparation</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <span>Better<br>Understanding</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-trophy"></i>
+                                    <span>Strive for<br>Excellence</span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-chart-line"></i>
-                            <span>Academic<br>Progress</span>
+                        <div class="hero-image">
+                            <img src="./images/hero-images/students-2.jpg" alt="Student preparing for examinations">
+
+                            <div class="image-badge">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <div>
+                                    <strong>Believe in Yourself</strong>
+                                    <span>Every lesson moves you forward.</span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-users"></i>
-                            <span>Student<br>Support</span>
-                        </div>
                     </div>
+                </article>
+
+
+                <!-- SLIDE 3 -->
+                <article class="hero-slide">
+                    <div class="container hero-grid">
+
+                        <div class="hero-content">
+                            <span class="eyebrow">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                DISCOVER YOUR POTENTIAL
+                            </span>
+
+                            <h1>
+                                Your Dreams Deserve
+                                <span>Your Best Effort.</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Whether you're strengthening your foundations
+                                or preparing for A Level, take the next step
+                                towards your future with Schools of Commercials.
+                            </p>
+
+                            <div class="hero-buttons">
+                                <a href="pages/enrolment.html" class="btn btn-primary">
+                                    Start Your Journey
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                                <a href="pages/about.html" class="btn btn-outline">
+                                    About Our School
+                                </a>
+                            </div>
+
+                            <div class="hero-features">
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-user-graduate"></i>
+                                    <span>Personal<br>Growth</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>Build Your<br>Knowledge</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>A Brighter<br>Future</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-image">
+                            <img src="./images/hero-images/students-3.jpg" alt="Students learning and working together">
+
+                            <div class="image-badge">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <strong>Your Future Matters</strong>
+                                    <span>Learn. Improve. Achieve.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+
+            <!-- SLIDER CONTROLS -->
+            <div class="slider-controls container">
+
+                <div class="slider-dots" aria-label="Choose a hero slide">
+                    <button class="slider-dot active" aria-label="Show slide 1" aria-pressed="true"></button>
+
+                    <button class="slider-dot" aria-label="Show slide 2" aria-pressed="false"></button>
+
+                    <button class="slider-dot" aria-label="Show slide 3" aria-pressed="false"></button>
                 </div>
 
-                <div class="hero-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1100&q=85"
-                        alt="Students studying together">
+                <div class="slider-arrows">
+                    <button class="slider-arrow prev-slide" aria-label="Previous slide">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
 
-                    <div class="image-badge">
-                        <i class="fa-solid fa-book-open"></i>
-                        <div>
-                            <strong>Learn Every Day</strong>
-                            <span>Small steps. Big progress.</span>
-                        </div>
-                    </div>
+                    <button class="slider-arrow next-slide" aria-label="Next slide">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
 
             </div>
-        </article>
 
-
-        <!-- SLIDE 2 -->
-        <article class="hero-slide">
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-                    <span class="eyebrow">
-                        <i class="fa-solid fa-bullseye"></i>
-                        PREPARE TODAY. SUCCEED TOMORROW.
-                    </span>
-
-                    <h1>
-                        Turn Your Hard Work Into
-                        <span>Great Results.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Prepare for your examinations with guided revision,
-                        subject practice and support that helps you tackle
-                        challenging questions with confidence.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="pages/o-level.html" class="btn btn-primary">
-                            O Level Lessons
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                        <a href="pages/a-level.html" class="btn btn-outline">
-                            A Level Lessons
-                        </a>
-                    </div>
-
-                    <div class="hero-features">
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-file-circle-check"></i>
-                            <span>Exam<br>Preparation</span>
-                        </div>
-
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-brain"></i>
-                            <span>Better<br>Understanding</span>
-                        </div>
-
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-trophy"></i>
-                            <span>Strive for<br>Excellence</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1100&q=85"
-                        alt="Student preparing for examinations">
-
-                    <div class="image-badge">
-                        <i class="fa-solid fa-bullseye"></i>
-                        <div>
-                            <strong>Believe in Yourself</strong>
-                            <span>Every lesson moves you forward.</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </article>
-
-
-        <!-- SLIDE 3 -->
-        <article class="hero-slide">
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-                    <span class="eyebrow">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        DISCOVER YOUR POTENTIAL
-                    </span>
-
-                    <h1>
-                        Your Dreams Deserve
-                        <span>Your Best Effort.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Whether you're strengthening your foundations
-                        or preparing for A Level, take the next step
-                        towards your future with Schools of Commercials.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="pages/enrolment.html" class="btn btn-primary">
-                            Start Your Journey
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                        <a href="pages/about.html" class="btn btn-outline">
-                            About Our School
-                        </a>
-                    </div>
-
-                    <div class="hero-features">
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-user-graduate"></i>
-                            <span>Personal<br>Growth</span>
-                        </div>
-
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-book"></i>
-                            <span>Build Your<br>Knowledge</span>
-                        </div>
-
-                        <div class="hero-feature">
-                            <i class="fa-solid fa-star"></i>
-                            <span>A Brighter<br>Future</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85"
-                        alt="Students learning and working together">
-
-                    <div class="image-badge">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <div>
-                            <strong>Your Future Matters</strong>
-                            <span>Learn. Improve. Achieve.</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </article>
-
-    </div>
-
-
-    <!-- SLIDER CONTROLS -->
-    <div class="slider-controls container">
-
-        <div class="slider-dots" aria-label="Choose a hero slide">
-            <button class="slider-dot active"
-                aria-label="Show slide 1"
-                aria-pressed="true"></button>
-
-            <button class="slider-dot"
-                aria-label="Show slide 2"
-                aria-pressed="false"></button>
-
-            <button class="slider-dot"
-                aria-label="Show slide 3"
-                aria-pressed="false"></button>
-        </div>
-
-        <div class="slider-arrows">
-            <button class="slider-arrow prev-slide"
-                aria-label="Previous slide">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
-
-            <button class="slider-arrow next-slide"
-                aria-label="Next slide">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
 
@@ -345,16 +329,11 @@
                         </div>
 
                         <ul class="subject-list">
-                            <li><i class="fa-solid fa-circle-check"></i> Mathematics</li>
-                            <li><i class="fa-solid fa-circle-check"></i> English Language</li>
-                            <li><i class="fa-solid fa-circle-check"></i> English Literature</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Biology</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Chemistry</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Physics</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Geography</li>
-                            <li><i class="fa-solid fa-circle-check"></i> History</li>
                             <li><i class="fa-solid fa-circle-check"></i> Business Studies</li>
                             <li><i class="fa-solid fa-circle-check"></i> Accounting</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Commerce</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Business Enterprises</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Mathematics</li>
                         </ul>
 
                         <a href="pages/o-level.html" class="text-link">
@@ -379,16 +358,9 @@
                         </div>
 
                         <ul class="subject-list">
-                            <li><i class="fa-solid fa-circle-check"></i> Mathematics</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Further Mathematics</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Physics</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Chemistry</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Biology</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Geography</li>
-                            <li><i class="fa-solid fa-circle-check"></i> History</li>
                             <li><i class="fa-solid fa-circle-check"></i> Business Studies</li>
                             <li><i class="fa-solid fa-circle-check"></i> Accounting</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Computer Science</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Economics</li>
                         </ul>
 
                         <a href="pages/a-level.html" class="text-link">
@@ -559,111 +531,78 @@
             </div>
         </section>
 
+
+
+        <section class="gallery-cta">
+            <div class="container gallery-cta-content">
+
+                <span class="gallery-subtitle">
+                    SEE IT FOR YOURSELF
+                </span>
+
+                <h2>
+                    Don't Just Take Our Word for It.
+                    <span>Judge for Yourself.</span>
+                </h2>
+
+                <p>
+                    Think we're one of the best? Explore our gallery and
+                    see our students, learning environment, and school
+                    activities for yourself. The proof is in the experience.
+                </p>
+
+                <a href="pages/gallery.html" class="btn btn-gallery">
+                    Explore Our Gallery
+                    <i class="fa-solid fa-images"></i>
+                </a>
+
+            </div>
+        </section>
+
+
     </main>
 
 
     <!-- ================= FOOTER ================= -->
 
-    <footer class="footer">
-        <div class="container footer-grid">
+    <footer class="site-footer">
+        <div class="container footer-container">
 
-            <div class="footer-brand">
-                <a href="index.html" class="logo footer-logo">
-                    <span class="logo-icon">
-                        <i class="fa-solid fa-book-open"></i>
-                        <i class="fa-solid fa-graduation-cap cap-icon"></i>
-                    </span>
+            <a href="../index.html" class="logo footer-logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
 
-                    <span class="logo-text">
-                        <strong>SCHOOLS OF</strong>
-                        <strong>COMMERCIALS</strong>
-                        <small>Learn. Improve. Achieve.</small>
-                    </span>
-                </a>
+                <span>Schools of <strong>Commercials</strong></span>
+            </a>
 
+            <p>
+                Supporting learners as they work towards their academic goals.
+            </p>
+
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="subjects.html">Subjects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
                 <p>
-                    Supporting students as they build knowledge,
-                    confidence and a brighter academic future.
-                </p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <a href="index.html">Home</a>
-                <a href="pages/about.html">About Us</a>
-                <a href="pages/subjects.html">Subjects</a>
-                <a href="pages/contact.html">Contact</a>
-            </div>
-
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <p><i class="fa-solid fa-location-dot"></i> Zimbabwe</p>
-                <p><i class="fa-solid fa-phone"></i>0679350750</p>
-                <p><i class="fa-solid fa-envelope"></i>Markmudyiwah0@gmail.com</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Connect With Us</h3>
-
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-                <p class="social-note">
-                    Follow us for school updates and announcements.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p>
-                    &copy; <span id="currentYear">2026</span>
+                    &copy; <span id="currentYear"></span>
                     Marcus_Zw. All rights reserved.
                 </p>
-                <p>Learn Today. Build Tomorrow.</p>
             </div>
+
         </div>
     </footer>
 
 
+
     <!-- JavaScript -->
-     <script src="js/index.js"></script>
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navLinks = document.getElementById("navLinks");
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navLinks.classList.toggle("show");
-
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuToggle.innerHTML = isOpen
-                ? '<i class="fa-solid fa-xmark"></i>'
-                : '<i class="fa-solid fa-bars"></i>';
-        });
-
-        // Close the mobile menu after selecting a link
-        navLinks.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navLinks.classList.remove("show");
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
-            });
-        });
-
-        // Automatically update the copyright year
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
 
 </body>
+
 </html>
