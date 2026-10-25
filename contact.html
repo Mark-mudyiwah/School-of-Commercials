@@ -1,11 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Contact Us | School of Commercials</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Contact Page CSS -->
+    <link rel="stylesheet" href="./css/shared/header.css">
+    <link rel="stylesheet" href="./css/shared/footer.css">
+    <link rel="stylesheet" href="css/shared/general.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
+
 <body>
-    <h1>In Progress</h1>
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                <img src="images/hero-images/logo.jpg" alt="School of Commercials Logo">
+
+                <span>School of <strong>Commercials</strong></span>
+            </a>
+
+
+
+            <nav class="navbar" id="navbar">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="subjects.html">Subjects</a>
+                <a href="contact.html" class="active">Contact</a>
+
+                <a href="enrolment.html" class="btn btn-primary nav-btn">
+                    Enquire Now
+                </a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navbar">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <main class="contact-page">
+
+
+        <!-- CONTACT HERO SECTION -->
+        <section class="contact-main-hero">
+            <div class="container main-hero-content">
+
+                <div class="main-hero-text">
+
+                    <span class="section-label">
+                        <i class="fa-solid fa-envelope"></i>
+                        Get In Touch
+                    </span>
+
+                    <h1>
+                        We're Here
+                        <span>To Help You Succeed</span>
+                    </h1>
+
+                    <p>
+                        Have questions about enrolment, our A-Level subjects,
+                        or your future with us? Our team is ready to guide you.
+                        Reach out to us and take the next step towards achieving
+                        your academic goals.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact-details" class="btn btn-primary">
+                            Contact Our Team
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="subjects.html" class="btn btn-outline">
+                            Explore Subjects
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="main-hero-image">
+                    <img src="images/hero-images/students.jpg" alt="Students learning and preparing for their future">
+
+                    <div class="hero-note">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+                            <strong>Visit Our School</strong>
+                            <span>Budiriro 2 Extension</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- CONTACT INTRO -->
+        <section class="contact-intro" id="contact-details">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">WE'RE HERE FOR YOU</span>
+
+                    <h2>How Can We <span>Help You?</span></h2>
+
+                    <p>
+                        Whether you are a prospective student, parent,
+                        or current learner, feel free to contact us.
+                    </p>
+                </div>
+
+
+                <!-- CONTACT CARDS -->
+                <div class="contact-cards">
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <h3>Call Us</h3>
+
+                        <p>
+                            Speak to us directly about enrolment
+                            and general enquiries.
+                        </p>
+
+                        <a href="tel:+263774244900">
+                            +263 77424 4900
+                        </a>
+
+                        <span class="card-action">
+                            Give us a call
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <h3>Email Us</h3>
+
+                        <p>
+                            Send us your questions and we will
+                            get back to you.
+                        </p>
+
+                        <a href="mailto:schoolofCommecials@gmail.com">
+                           SchoolOfCommecials@gmail.com
+                        </a>
+
+                        <span class="card-action">
+                            Send an email
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <h3>Visit Our School</h3>
+
+                        <p>
+                            Come and meet us to learn more about
+                            our learning environment.
+                        </p>
+
+                        <strong class="location-text">
+                            Budiriro 2 Extension
+                        </strong>
+
+                        <a class="card-action"
+                            href="https://www.google.com/maps/search/?api=1&query=Budiriro+2+Extension" target="_blank"
+                            rel="noopener noreferrer">
+
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MESSAGE AND CONTACT DETAILS -->
+        <section class="contact-main">
+
+            <div class="container contact-main-grid">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-message">
+
+                    <span class="section-label">SEND US A MESSAGE</span>
+
+                    <h2>
+                        We'd Love to
+                        <span>Hear From You.</span>
+                    </h2>
+
+                    <p class="message-description">
+                        Complete the form below and tell us what
+                        you would like to know. We welcome all
+                        questions about our school and programmes.
+                    </p>
+
+                    <form class="contact-form" id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                    autocomplete="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                                    autocomplete="tel" required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+
+                            <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                autocomplete="email" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="subject">What Is Your Enquiry About?</label>
+
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>
+                                    Select an enquiry
+                                </option>
+
+                                <option value="enrolment">Student Enrolment</option>
+                                <option value="subjects">Subjects Offered</option>
+                                <option value="fees">School Fees</option>
+                                <option value="timetable">Timetables and Classes</option>
+                                <option value="general">General Enquiry</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+
+
+                        <button type="submit" class="contact-submit-btn">
+
+                            Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                        <p class="form-note" id="formStatus" role="status" aria-live="polite">
+                            Please complete all fields before sending your enquiry.
+                        </p>
+
+                    </form>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <aside class="contact-sidebar">
+
+                    <div class="sidebar-top">
+
+                        <span class="sidebar-label">GET IN TOUCH</span>
+
+                        <h3>
+                            Your Future
+                            Starts With a Conversation.
+                        </h3>
+
+                        <p>
+                            We believe every learner deserves the
+                            opportunity to grow, learn, and succeed.
+                            Reach out and let us guide you.
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-contact-item">
+
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>Budiriro 2 Extension</p>
+                            <span>Visit us for school enquiries.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sidebar-contact-item">
+
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h4>Phone Support</h4>
+                            <p>+263 77424 4900</p>
+                             <span>For direct and whatsApp calls.</span>
+                          
+                        </div>
+
+                    </div>
+
+
+                    <div class="sidebar-contact-item">
+
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h4>Email Support</h4>
+                            <p>info@schoolofcommecials.com</p>
+                            <span>For enquiries and admissions.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sidebar-divider"></div>
+
+                    <div class="sidebar-bottom">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <p>
+                            Have questions about A-Level Business Studies,
+                            Economics, or Accounting? Contact us to learn more.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCATION SECTION -->
+        <section class="location-section">
+
+            <div class="container location-grid">
+
+                <div class="location-copy">
+
+                    <span class="section-label">COME VISIT US</span>
+
+                    <h2>
+                        Find Us in
+                        <span>Budiriro.</span>
+                    </h2>
+
+                    <p>
+                        We welcome prospective students and parents
+                        who would like to find out more about the
+                        School of Commercials.
+                    </p>
+
+                    <div class="location-address">
+
+                        <i class="fa-solid fa-map-pin"></i>
+
+                        <div>
+                            <strong>School of Commercials</strong>
+                            <span>Budiriro 2 Extension</span>
+                        </div>
+
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Budiriro+2+Extension" target="_blank"
+                        rel="noopener noreferrer" class="directions-button">
+
+                        <i class="fa-solid fa-diamond-turn-right"></i>
+                        Open Google Maps
+
+                    </a>
+
+                    <p class="map-note">
+                        Confirm the school's exact pin on Google Maps
+                        before publishing this link.
+                    </p>
+
+                </div>
+
+
+                <div class="location-visual">
+
+                    <div class="location-visual-icon">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+
+                    <span class="location-small-label">
+                        YOUR LEARNING DESTINATION
+                    </span>
+
+                    <h3>School of Commercials</h3>
+
+                    <p>
+                        Budiriro 2 Extension
+                    </p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Budiriro+2+Extension" target="_blank"
+                        rel="noopener noreferrer">
+
+                        View Location
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="contact-cta">
+
+            <div class="container contact-cta-content">
+
+                <div>
+                    <span>TAKE THE NEXT STEP</span>
+
+                    <h2>
+                        Ready to Invest in Your Future?
+                    </h2>
+
+                    <p>
+                        Get in touch with the School of Commercials
+                        and let your journey begin.
+                    </p>
+                </div>
+
+                <a href="#contactForm" class="cta-button">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+
+            <a href="../index.html" class="logo footer-logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <span>Schools of <strong>Commercials</strong></span>
+            </a>
+
+            <p>
+                Supporting learners as they work towards their academic goals.
+            </p>
+
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="subjects.html">Subjects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear"></span>
+                    Marcus_Zw. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+
 </body>
+
 </html>
