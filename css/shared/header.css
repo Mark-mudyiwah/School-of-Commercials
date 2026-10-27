@@ -120,60 +120,53 @@ a {
 
 
 
-
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     padding: 13px 23px;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    font: inherit;
-    font-size: 0.94rem;
+    border-radius: 50px;
+    font-size: 14px;
     font-weight: 800;
+    transition: 0.3s ease;
     cursor: pointer;
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
+    border: 2px solid transparent;
 }
 
 .btn-primary {
-    color: var(--subjects-white);
-    background: var(--subjects-primary);
-    box-shadow: 0 6px 18px rgba(56, 169, 232, 0.2);
+    background:var(--subjects-primary) ;
+    color: var(--white);
+    color: var(--subjects-background);
+   
 }
 
 .btn-primary:hover {
-    background: var(--subjects-primary-dark);
-    box-shadow: 0 10px 24px rgba(56, 169, 232, 0.25);
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    color:red ;  
+  box-shadow: 0 8px 20px rgba(25, 169, 238, 0.2);
 }
 
 .btn-outline {
-    color: var(--subjects-primary-dark);
-    background: var(--subjects-white);
-    border-color: #b7e4fc;
+    border-color: var(--primary);
+    color: var(--primary-dark);
+    background: transparent;
 }
 
 .btn-outline:hover {
-    background: var(--subjects-light);
-    border-color: var(--subjects-primary);
+    background: var(--primary-light);
+    transform: translateY(-3px);
 }
 
 .btn-white {
-    color: var(--subjects-primary-dark);
-    background: var(--subjects-white);
+    background: var(--white);
+    color: var(--primary-dark);
 }
 
 .btn-white:hover {
-    background: var(--subjects-light);
+    background: var(--primary-light);
+    transform: translateY(-3px);
 }
 
 /*logo*/

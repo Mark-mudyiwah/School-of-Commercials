@@ -99,42 +99,7 @@
     gap: 15px;
 }
 
-.contact-main-hero .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-height: 52px;
-    padding: 14px 22px;
-    border-radius: 7px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.25s ease;
-}
 
-.contact-main-hero .btn-primary {
-    border: 2px solid #168bd0;
-    background: #168bd0;
-    color: #ffffff;
-}
-
-.contact-main-hero .btn-primary:hover {
-    border-color: #0877b9;
-    background: #0877b9;
-    transform: translateY(-3px);
-}
-
-.contact-main-hero .btn-outline {
-    border: 2px solid #168bd0;
-    background: transparent;
-    color: #0877b9;
-}
-
-.contact-main-hero .btn-outline:hover {
-    background: #e0f3ff;
-    transform: translateY(-3px);
-}
 
 /* Hero image */
 
@@ -684,7 +649,7 @@
 .form-group textarea {
     width: 100%;
     min-width: 0;
-    padding: 14px 15px;
+    padding: 2px 5px;
     border: 1px solid #d9edf9;
     border-radius: 6px;
     outline: none;

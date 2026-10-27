@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: "Nunito Sans", sans-serif;
+    font-family:roboto;
     color: var(--subjects-dark);
     background: var(--subjects-white);
     line-height: 1.7;

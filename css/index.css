@@ -16,28 +16,6 @@
     --radius: 18px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-}
-
-body {
-    font-family: "Nunito Sans", sans-serif;
-    color: var(--text);
-    background: var(--white);
-    line-height: 1.7;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 ul {
     list-style: none;
@@ -65,8 +43,8 @@ a {
 
 /* ==============================
    2. REUSABLE COMPONENTS
-================================= */
 
+   
 .btn {
     display: inline-flex;
     align-items: center;
@@ -112,6 +90,8 @@ a {
     background: var(--primary-light);
     transform: translateY(-3px);
 }
+================================= */
+
 
 .section-heading {
     max-width: 700px;
@@ -473,6 +453,95 @@ a {
         animation: none;
     }
 }
+
+
+/* =========================================
+   MOVING SCHOOL HIGHLIGHTS
+========================================= */
+
+.school-highlights {
+    overflow: hidden;
+    padding: 22px 0;
+    background: #f5fbff;
+    border-top: 1px solid #e2edf5;
+    border-bottom: 1px solid #e2edf5;
+}
+
+.highlights-track {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: max-content;
+    animation: moveHighlights 35s linear infinite;
+}
+
+.highlight-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 225px;
+    padding: 17px 22px;
+    border: 1px solid #e2edf5;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(25, 90, 135, 0.06);
+}
+
+.highlight-card > i {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #eaf7ff;
+    color: #1687c9;
+    font-size: 1.15rem;
+}
+
+.highlight-card h3 {
+    margin: 0 0 5px;
+    color: #17324d;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.highlight-card p {
+    margin: 0;
+    color: #526477;
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+@keyframes moveHighlights {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause when the visitor hovers over the strip */
+.school-highlights:hover .highlights-track {
+    animation-play-state: paused;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .highlights-track {
+        animation: none;
+    }
+}
+
+
+
+
+
+
+
 
 
 
