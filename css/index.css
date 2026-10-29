@@ -195,6 +195,7 @@ a {
     flex-wrap: wrap;
     gap: 13px;
     margin-bottom: 36px;
+    width: 100%;
 }
 
 .hero-features {
@@ -428,6 +429,11 @@ a {
 @media (max-width: 800px) {
     .hero-slide .hero-grid {
         padding-bottom: 35px;
+
+    }
+
+    .hero-grid {
+   grid-template-columns: 1fr;
     }
 
     .slider-controls {
@@ -435,9 +441,13 @@ a {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 707px) {
     .hero-slide .hero-image > img {
         height: 290px;
+    }
+
+    .subject-grid{
+     
     }
 
     .slider-arrow {
@@ -649,6 +659,19 @@ a {
 }
 
 
+
+
+@media (max-width: 707px) {
+ 
+
+    .subject-grid{
+   grid-template-columns: 1fr;
+    }
+
+  
+}
+
+
 /* ==============================
    6. IMPACT SECTION
 ================================= */
@@ -715,6 +738,16 @@ a {
     font-size: 12px;
 }
 
+
+@media (max-width: 707px) {
+ 
+
+    .impact-grid{
+   grid-template-columns: 1fr;
+    }
+
+  
+}
 
 /* ==============================
    7. WHY CHOOSE US

@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+ 
 }
 
 body {
@@ -8,6 +9,7 @@ body {
     color: var(--subjects-dark);
     background: var(--subjects-white);
     line-height: 1.7;
+    max-width: 100%;
 }
 
 .container {
