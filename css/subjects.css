@@ -1,5 +1,3 @@
-
-
 :root {
     --subjects-primary: #38a9e8;
     --subjects-primary-dark: #1687c9;
@@ -40,11 +38,9 @@
     overflow: hidden;
     padding: 85px 0 95px;
     background:
-        radial-gradient(
-            circle at 90% 15%,
+        radial-gradient(circle at 90% 15%,
             rgba(56, 169, 232, 0.14),
-            transparent 32%
-        ),
+            transparent 32%),
         linear-gradient(135deg, #f5fbff 0%, #ffffff 70%);
 }
 
@@ -83,7 +79,7 @@
     color: var(--subjects-primary-dark);
 }
 
-.main-hero-text > p {
+.main-hero-text>p {
     max-width: 550px;
     margin: 0 0 28px;
     color: var(--subjects-text);
@@ -113,7 +109,7 @@
     background: #d7f0ff;
 }
 
-.main-hero-image > img {
+.main-hero-image>img {
     position: relative;
     z-index: 1;
     height: 420px;
@@ -137,7 +133,7 @@
     box-shadow: var(--subjects-shadow);
 }
 
-.hero-note > i {
+.hero-note>i {
     width: 48px;
     height: 48px;
     display: grid;
@@ -162,6 +158,12 @@
 .hero-note span {
     color: var(--subjects-text);
     font-size: 0.8rem;
+}
+
+@media (max-width: 730px) {
+    .main-hero-content{
+        grid-template-columns: 1fr ;
+    }
 }
 
 
@@ -191,7 +193,7 @@
     color: var(--subjects-primary-dark);
 }
 
-.intro-content > p {
+.intro-content>p {
     max-width: 700px;
     margin: 0 auto;
     color: var(--subjects-text);
@@ -226,7 +228,7 @@
     color: var(--subjects-primary-dark);
 }
 
-.section-heading > p {
+.section-heading>p {
     margin: 0;
     color: var(--subjects-text);
     font-size: 1rem;
@@ -269,11 +271,9 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(15, 48, 75, 0.48),
-        transparent 65%
-    );
+    background: linear-gradient(to top,
+            rgba(15, 48, 75, 0.48),
+            transparent 65%);
     pointer-events: none;
 }
 
@@ -332,7 +332,7 @@
     font-weight: 800;
 }
 
-.programme-content > p {
+.programme-content>p {
     margin: 0 0 22px;
     color: var(--subjects-text);
     font-size: 0.96rem;
@@ -404,6 +404,13 @@
 }
 
 
+@media (max-width: 730px) {
+    .programme-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* =========================================
    LEARNING BENEFITS
 ========================================= */
@@ -433,7 +440,7 @@
     color: var(--subjects-primary-dark);
 }
 
-.benefits-heading > p {
+.benefits-heading>p {
     margin: 0 0 27px;
     color: var(--subjects-text);
     font-size: 1rem;
@@ -489,6 +496,12 @@
     line-height: 1.7;
 }
 
+@media (max-width: 900px) {
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* =========================================
    CALL TO ACTION
@@ -498,11 +511,9 @@
     position: relative;
     overflow: hidden;
     padding: 65px 0;
-    background: linear-gradient(
-        120deg,
-        #178bce,
-        #42b4ef
-    );
+    background: linear-gradient(120deg,
+            #178bce,
+            #42b4ef);
 }
 
 .subjects-cta::before,
@@ -558,7 +569,7 @@
     font-size: 0.98rem;
 }
 
-.cta-content > .btn {
+.cta-content>.btn {
     flex-shrink: 0;
 }
 
@@ -575,7 +586,7 @@
         gap: 40px;
     }
 
-    .main-hero-image > img {
+    .main-hero-image>img {
         height: 360px;
     }
 
