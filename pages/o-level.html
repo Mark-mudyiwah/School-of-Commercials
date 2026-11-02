@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,7 @@
     <meta name="description"
         content="Explore A Level Business Studies, Economics and Accounting at Schools of Commercials. Enquire about extra lessons and academic support.">
 
-  
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -397,39 +396,7 @@
 
 
     <!-- ================= JAVASCRIPT ================= -->
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navbar = document.getElementById("navbar");
-        const menuIcon = menuToggle.querySelector("i");
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navbar.classList.toggle("active");
-
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuToggle.setAttribute(
-                "aria-label",
-                isOpen ? "Close navigation menu" : "Open navigation menu"
-            );
-
-            menuIcon.classList.toggle("fa-bars", !isOpen);
-            menuIcon.classList.toggle("fa-xmark", isOpen);
-        });
-
-        // Close the menu after selecting a link
-        navbar.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navbar.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
-
-                menuIcon.classList.remove("fa-xmark");
-                menuIcon.classList.add("fa-bars");
-            });
-        });
-
-        // Automatically update the copyright year
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
-    </script>
+    <script src="../js/header.js"></script>
 
 </body>
 

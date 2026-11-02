@@ -10,8 +10,6 @@
     <meta name="description"
         content="Explore A Level Business Studies, Economics and Accounting at Schools of Commercials. Enquire about extra lessons and academic support.">
 
-    <link rel="stylesheet" href="../css/style.css">
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +19,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../css/a-level.css">
+    <link rel="stylesheet" href="../css/shared/header.css">
+    <link rel="stylesheet" href="../css/shared/footer.css">
+    <link rel="stylesheet" href="../css/shared/general.css">
 </head>
 
 <body>
@@ -392,7 +393,7 @@
                         </div>
                     </div>
 
-                    <a href="contact.html" class="btn btn-primary">
+                    <a href="../about.html" class="btn btn-primary">
                         Talk to Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -451,57 +452,22 @@
 
             <div class="footer-links">
                 <a href="../index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="subjects.html">Subjects</a>
-                <a href="contact.html">Contact</a>
+                <a href="../about.html">About Us</a>
+                <a href="../subjects.html">Subjects</a>
+                <a href="../contact.html">Contact</a>
             </div>
 
             <div class="footer-bottom">
                 <p>
                     &copy; <span id="currentYear"></span>
-                    Schools of Commercials. All rights reserved.
+                    School of Commercials. All rights reserved.
                 </p>
             </div>
 
         </div>
     </footer>
 
-
-    <!-- ================= JAVASCRIPT ================= -->
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navbar = document.getElementById("navbar");
-        const menuIcon = menuToggle.querySelector("i");
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navbar.classList.toggle("active");
-
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuToggle.setAttribute(
-                "aria-label",
-                isOpen ? "Close navigation menu" : "Open navigation menu"
-            );
-
-            menuIcon.classList.toggle("fa-bars", !isOpen);
-            menuIcon.classList.toggle("fa-xmark", isOpen);
-        });
-
-        // Close the menu after selecting a link
-        navbar.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navbar.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
-
-                menuIcon.classList.remove("fa-xmark");
-                menuIcon.classList.add("fa-bars");
-            });
-        });
-
-        // Automatically update the copyright year
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
-    </script>
-
+<script src="../js/header.js"></script>
 </body>
 
 </html>

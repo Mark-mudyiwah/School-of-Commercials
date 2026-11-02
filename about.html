@@ -45,7 +45,14 @@
             <nav class="navbar" id="navbar">
                 <a href="../index.html">Home</a>
                 <a href="about.html" class="active">About Us</a>
-                <a href="subjects.html">Subjects</a>
+                <div class="dropdown">
+                    <a href="subjects.html" class="dropdown-link">Subjects</a>
+
+                    <div class="dropdown-menu">
+                        <a href="./pages/o-level.html">O Level</a>
+                        <a href="./pages/a-level.html">A Level</a>
+                    </div>
+                </div>
                 <a href="contact.html">Contact</a>
 
                 <a href="enrolment.html" class="btn btn-primary nav-btn">
@@ -471,32 +478,7 @@
 
 
     <!-- ================= JAVASCRIPT ================= -->
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navbar = document.getElementById("navbar");
-        const menuIcon = menuToggle.querySelector("i");
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navbar.classList.toggle("active");
-
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuIcon.classList.toggle("fa-bars", !isOpen);
-            menuIcon.classList.toggle("fa-xmark", isOpen);
-        });
-
-        navbar.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navbar.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
-
-                menuIcon.classList.remove("fa-xmark");
-                menuIcon.classList.add("fa-bars");
-            });
-        });
-
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
-    </script>
+    <script src="./js/header.js"></script>
 
 </body>
 

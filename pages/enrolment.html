@@ -495,15 +495,15 @@
 
             <div class="footer-links">
                 <a href="../index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="subjects.html">Subjects</a>
-                <a href="contact.html">Contact</a>
+                <a href="../about.html">About Us</a>
+                <a href="../subjects.html">Subjects</a>
+                <a href="../contact.html">Contact</a>
             </div>
 
             <div class="footer-bottom">
                 <p>
                     &copy; <span id="currentYear"></span>
-                    Schools of Commercials. All rights reserved.
+                    School of Commercials. All rights reserved.
                 </p>
             </div>
 
@@ -512,32 +512,7 @@
 
 
     <!-- ================= JAVASCRIPT ================= -->
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navbar = document.getElementById("navbar");
-        const menuIcon = menuToggle.querySelector("i");
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navbar.classList.toggle("active");
-
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuIcon.classList.toggle("fa-bars", !isOpen);
-            menuIcon.classList.toggle("fa-xmark", isOpen);
-        });
-
-        navbar.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navbar.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
-
-                menuIcon.classList.remove("fa-xmark");
-                menuIcon.classList.add("fa-bars");
-            });
-        });
-
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
-    </script>
+  <script src="../js/header.js"></script>
 
 </body>
 
