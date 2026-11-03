@@ -861,7 +861,7 @@
 
 .directions-button:hover {
     background: #168acb;
-    color: var(--contact-primary);
+    color: var(--contact-dark);
 }
 
 .map-note {
@@ -1020,7 +1020,7 @@
 
 .cta-button:hover {
     background: #168acb;
-    color: var(--contact-primary);
+    color: var(--contact-dark);
 }
 
 

@@ -1,4 +1,5 @@
 
+
 .subjects-section {
     padding: 85px 0;
     background: #f4faff;
@@ -45,6 +46,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
+
 }
 
 .subject-card {
@@ -143,7 +145,7 @@
 
 /* MOBILE */
 
-@media (max-width: 520px) {
+@media (max-width: 1000px) {
     .subjects-grid {
         grid-template-columns: 1fr;
     }
