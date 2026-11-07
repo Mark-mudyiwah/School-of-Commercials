@@ -526,7 +526,8 @@
     outline-offset: 4px;
 }
 
-.enrollment-form-note {
+.enrollment-form-note ,
+.enrollment-form-error{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,6 +540,11 @@
 
 .enrollment-form-note i {
     color: #1684c5;
+}
+
+.enrollment-form-error{
+     color:red;
+      font-size: 14px;
 }
 
 
